@@ -1,0 +1,51 @@
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.imghome{
+    margin-bottom: 1.5em;
+}
+
+.columnas{
+    overflow: hidden;
+}
+
+.bienvenidos,
+.testimonios{
+    box-sizing: border-box;
+}
+
+.bienvenidos{
+    width: 75%;
+    padding-right: 2em;
+}
+
+.testimonios{
+    width: 25%;
+}
+
+.testimonio{
+    background-color: #ccc;
+    padding: 1em;
+}
+
+.testimonio
+.cita{
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.4em;
+    display: block;
+    margin: 5px 0 16px 0;
+}
+
+.testimonio
+.autor{
+    font-size: 0.7em;
+    text-align: center;
+    margin: 1em 0;
+    display: block;
+}

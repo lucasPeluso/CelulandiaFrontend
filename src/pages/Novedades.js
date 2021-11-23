@@ -1,5 +1,7 @@
 import React from "react";
 
+import '../styles/components/pages/Novedades.css'
+
 const NovedadesPage = (props) => {
     return (
         <main className="holder">

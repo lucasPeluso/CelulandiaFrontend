@@ -14,7 +14,7 @@ import NosotrosPage from "./pages/Nosotros";
 import NovedadesPage from "./pages/Novedades";
 import ServiciosPage from "./pages/Servicios";
 
-
+import '../src/App.css'
 
 function App() {
   return (

@@ -1,5 +1,7 @@
 import React from "react";
 
+import '../styles/components/pages/Servicios.css'
+
 const ServiciosPage = (props) => {
     return (
         <main className="holder">
