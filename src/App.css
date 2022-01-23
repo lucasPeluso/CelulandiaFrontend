@@ -1,15 +1,15 @@
 body{
-  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 20px;
-}
-.holder{
-  width: 1124px;
-  margin: 0 auto;
+
+  min-height: 100vh;
+
+  background:linear-gradient(-180deg, rgba(236, 233, 230, 1) 0.65%, rgba(255, 255, 255, 1) 84.02%);
 }
 
-h2{
-  color: #235d8a;
-  font-weight: 400;
-  margin: 0 0 1em;
+.holder{
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
 }
+

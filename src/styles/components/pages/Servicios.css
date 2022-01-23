@@ -1,51 +1,79 @@
-.servicio{
-    border: 1px solid gray;
-    border-radius: 0.7em;
-    margin: 1em 0;
-    padding: 1em;
-    overflow: hidden;
+.lista-servicios{
+    text-align: left;
+
+    margin-left: -8px;
+
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight:600;
+    color: #4e4e4e;
+    list-style-type: none;
+    line-height: 45px;
 }
 
-.servicio .info{
-    width: 75%;
+.servicios{
+    width: 1000px;
+    height: 340px;
+
+    background-color: white;
+    border-radius: 1em;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.2);
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+
 }
 
-.servicio .info h4{
-    color: #235d8a;
-    font-size: 1.2em;
-    font-style: italic;
-    font-weight: 500;
-    margin: 0 0 1em;
-    border-bottom: 1px solid #235d8a;
-    padding-bottom: 0.5em;
+.servicios img{
+    width: 350px;
+    height: 280px;
+
+    border-radius: 1em;
+
+    margin: 30px;
 }
 
-.servicio .info p{
-    font-size: 0.8em;
-    line-height: 1.2em;
+.servicios p{
+    text-align: center;
+
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight:400;
+    color: #4e4e4e;
+
+    line-height:30px;
+
+    margin-top: 100px;
+    margin-right: 20px;
 }
 
-.servicio img{
-    border-radius: 0.8em;
-    width: 250px;
-    height: 100px;
-    object-fit: cover;
+.subtitulo{
+
+    font-family:Montserrat;
+    font-weight:600;
+    font-size:36px;
+    line-height:40px;
+    background:linear-gradient(90deg, rgba(0, 12, 64, 1) 0%, rgba(96, 125, 139, 1) 100%);
+    background-clip:text;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    margin-bottom: 40px;
 }
 
-.servicio:nth-child(even) img{
-    float: right;
-    margin: 0 0 0 1em;
+.container-marca{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    
+    margin-bottom: 60px;
 }
 
-.servicio:nth-child(even) .info{
-    float: left;
-}
+.marca h6{
+    font-family:Montserrat;
+    font-weight:400;
+    font-size:28px;
+    color: #4e4e4e;
 
-.servicio:nth-child(odd) img{
-    float: left;
-    margin: 0 1em 0 0;
-}
-
-.servicio:nth-child(odd) .info{
-    float: right;
+    margin: 0;
+    margin-bottom: 20px;
 }

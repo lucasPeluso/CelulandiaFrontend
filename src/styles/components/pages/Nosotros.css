@@ -1,53 +1,111 @@
-.historia p{
-    font-size: 0.8em;
+.tittle,
+.subtittle{
+    margin-top:40px;
+    margin-bottom: 10px;
+
+    color: black;
+    font-style:normal;
+    font-family:Montserrat;
+    font-weight:600;
+    font-size:48px;
+    line-height:58px;
+    background:linear-gradient(90deg, rgba(0, 12, 64, 1) 0%, rgba(96, 125, 139, 1) 100%);
+    background-clip:text;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
 }
 
-.personas{
-    overflow: hidden;
+.subtittle{
+    margin-right: 20px;
+    margin-top: 55px;
+    font-size: 50px;
+
+    margin-bottom: 40px;
+}
+
+.container-personas{
+        width: 100%;
+        height: 450px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 30px;
 }
 
 .persona{
-    width: 18%;
-    border: 1px solid gray;
-    border-radius: 0.25em;
-    float: left;
-    margin-left: 2.25%;
-    box-sizing: border-box;
-    text-align: center;
+    width: 200px;
+    height: 450px;
+    overflow: hidden;
+    margin: 10px;
 }
 
 .persona img{
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
-    box-shadow: 0 0 5px rgba(0,0,0,0.5);
-    margin: 0.8em 0 1em;
-    max-width: 70%;
-    height: 150px;
-    object-fit: cover;
-}
-
-.persona h5,
-.persona h6{
-    text-align: center;
-    font-weight: normal;
-    color: #235d8a;
-    margin: 0;
-}
-
-.persona h5{
-    font-size: 0.9em;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.2);
 }
 
 .persona h6{
-    font-size: 0.8em;
-    font-style: italic;
+    font-family: Montserrat;
+    font-size: 18px;
+    color: #4e4e4e;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .persona p{
-    font-size: 0.7em;
-    color: #444;
-    margin: 0 1em 1em;
+    font-family: Montserrat;
+    font-size: 12px;
+    color: #4e4e4e;
+    padding: 5px;
 }
 
-.persona:first-child{
-    margin-left: 0;
+
+.container-nos{
+    width: 1000px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 50px;
 }
+
+.img-nos{
+    width: 220px;
+    height: 300px;
+
+    border-radius: 5px 0 0 5px;
+}
+
+.container-nos div{
+    height: 300px;
+    width: 760px;
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+
+    background-color: #607D8B;
+    border-radius: 5px 5px 130px 5px;
+}
+
+.beneficios{
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight:700;
+    color: #ffffff;
+    list-style-type: none;
+    padding-left: 20px; 
+    line-height: 45px;
+}
+
+.beneficios i{
+    position: absolute;
+    color: black;
+    height: 20px;
+    width: 20px;
+}
+

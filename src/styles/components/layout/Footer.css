@@ -1,10 +1,38 @@
+.container-footer{
+    background-color: rgba(214, 210, 210, 1);
+    filter:drop-shadow(0px -1.5px 2px rgba(0, 0, 0, 0.25));
 
-footer{
-    background-color: #ccc;
-    clear: both;
-    color: #333;
-    padding: 3em 0;
-    margin-top: 2em;
-    text-align: center;
+
+
+    height:165px;
 }
 
+.grid-footer{
+    width: 1000px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    color:rgba(81, 81, 81, 1);
+    font-family:Montserrat;
+    font-weight:400;
+    font-size:12px;
+    line-height:14px;
+
+    gap: 10px;
+}
+
+.copy-footer{
+    width: 1000px;
+    margin: auto;
+    margin-top: 5px;
+
+    text-align: center;
+
+    color:rgba(105, 104, 104, 1);
+    font-family:Montserrat;
+    font-weight:400;
+    font-size:12px;
+    line-height:15px;
+}

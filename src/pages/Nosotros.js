@@ -5,75 +5,55 @@ import '../styles/components/pages/Nosotros.css'
 const NosotrosPage = (props) => {
     return (
         <main className="holder">
-            <div className="historia">
-                <h2>Historia</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni facilis dignissimos
-                    accusamus voluptatem aperiam quis, dolor quia distinctio ratione eligendi dolorum,
-                    mollitia beatae inventore in repellat corporis iusto maxime perspiciatis!
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores at dolore laborum
-                    odit consectetur repellat consequuntur iure possimus beatae? Earum culpa quia impedit
-                    reprehenderit beatae. Quam suscipit beatae eos magnam.
-                </p>
-            </div>
-            <div className="staff">
-                <h2>Staff</h2>
-                <div className="personas">
-                    <div className="persona">
-                        <img src="img/persona1.jpg" alt=""/>
-                        <h5>Esteban Quito</h5>
-                        <h6>Jefe de reparaciones</h6>
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus dolore aperiam 
-                            tempore natus! Est quia, enim aperiam aut sed repellat nobis libero facere assumenda 
-                            ipsam iste. Quis, quo necessitatibus? Id?
-                        </p>
-                    </div>
-                    <div className="persona">
-                        <img src="img/persona2.jpg" alt=""/>
-                        <h5>Mateo Marquez</h5>
-                        <h6>Técnico de celulares</h6>
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus dolore aperiam 
-                            tempore natus! Est quia, enim aperiam aut sed repellat nobis libero facere assumenda 
-                            ipsam iste. Quis, quo necessitatibus? Id?
-                        </p>
-                    </div>
-                    <div className="persona">
-                        <img src="img/persona3.jpg" alt=""/>
-                        <h5>Luis Rodriguez</h5>
-                        <h6>Experto en Software</h6>
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus dolore aperiam 
-                            tempore natus! Est quia, enim aperiam aut sed repellat nobis libero facere assumenda 
-                            ipsam iste. Quis, quo necessitatibus? Id?
-                        </p>
-                    </div>
-                    <div className="persona">
-                        <img src="img/persona4.jpg" alt=""/>
-                        <h5>Miguel Cervantes</h5>
-                        <h6>Mantenimiento de celulares</h6>
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus dolore aperiam 
-                            tempore natus! Est quia, enim aperiam aut sed repellat nobis libero facere assumenda 
-                            ipsam iste. Quis, quo necessitatibus? Id?
-                        </p>
-                    </div>
-                    <div className="persona">
-                        <img src="img/persona5.jpg" alt=""/>
-                        <h5>Robertito Gomez</h5>
-                        <h6>Especialista en IA</h6>
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus dolore aperiam 
-                            tempore natus! Est quia, enim aperiam aut sed repellat nobis libero facere assumenda 
-                            ipsam iste. Quis, quo necessitatibus? Id?
-                        </p>
-                    </div>
-                </div>
+            <h1 className="tittle">¿Quiénes Somos?</h1>
 
+            <div className="container-personas">
+                <div className="persona">
+                    <img src="img/persona4.jpg" alt=""/>
+                    <h6>Bessie Cooper</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sapien faucibus at sem non ut nec est non.<br/><br/>
+                    Vestibulum in ipsum donec tellus non dolor magna nisi non. Ultricies faucibus quis.</p>
+                </div>
+                <div className="persona">
+                    <img src="img/persona5.jpg" alt=""/>
+                    <h6>Brad Nguyen</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra ligula mi sed. Commodo dictumst sapien aliquet risus gravida.<br/><br/>
+                    Phasellus egestas est diam tempus  blandit.</p>
+                </div>
+                <div className="persona">
+                    <img src="img/persona6.jpg" alt=""/>
+                    <h6>Wade Warren</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar molestie vel eget mauris velit feugiat.<br/><br/>
+                    Lacus est id rutrum non dolor ut lobortis. Et nisl  tempus ut aliquet.</p>
+                </div>
+                <div className="persona">
+                    <img src="img/persona7.jpg" alt=""/>
+                    <h6>Cameron Williamson</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat ultricies fermentum nullam enim, leo luctus cursus.<br/><br/>
+                    Mauris fermentum lectus risus,  dictum feugiat lorem.</p>
+                </div>
             </div>
+
+            <div className="container-nos">
+                <h2 className="subtittle">¿Por qué<br/>
+                elegirnos?</h2>
+                <div>
+                    <img className="img-nos" src="img/nosotros.png" alt=""/>
+                    <ul className="beneficios">
+                        <li>Nos comprometemos en cada servicio.</li>
+                        <li>Brindamos un trato personalizado.</li>
+                        <li>Ofrecemos una buena relación precio/calidad.</li>
+                        <li>Maquinaria de última tecnología para trabajos específicos.</li>
+                        <li>Compromisos con el tiempo de cada pedido.</li>
+                        <li>Nos capacitamos permanentemente.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <a href="contacto.html" className="btn-wsp">
+                <p>WhatsApp</p>
+            </a>
+
         </main>
     );
 }

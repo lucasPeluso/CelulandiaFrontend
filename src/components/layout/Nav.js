@@ -10,12 +10,12 @@ const Nav = (props) => {
         <nav>
             <div className="holder">
                 <ul>
-                    <li><NavLink to="/" style={({ isActive }) => ({ backgroundColor: isActive ? '#0079d3' : '#004e87' })}>Inicio</NavLink></li>
-                    <li><NavLink to="nosotros" style={({ isActive }) => ({ backgroundColor: isActive ? '#0079d3' : '#004e87' })}>Sobre nosotros</NavLink></li>
-                    <li><NavLink to="servicios" style={({ isActive }) => ({ backgroundColor: isActive ? '#0079d3' : '#004e87' })}>Nuestros servicios</NavLink></li>
-                    <li><NavLink to="galeria" style={({ isActive }) => ({ backgroundColor: isActive ? '#0079d3' : '#004e87' })}>Celulares reparados</NavLink></li>
-                    <li><NavLink to="novedades" style={({ isActive }) => ({ backgroundColor: isActive ? '#0079d3' : '#004e87' })}>Novedades</NavLink></li>
-                    <li><NavLink to="contacto" style={({ isActive }) => ({ backgroundColor: isActive ? '#0079d3' : '#004e87' })}>Contacto</NavLink></li>
+                    <li><NavLink to="/" style={({ isActive }) => ({ boxShadow: isActive ? 'inset 3px 3px 0 0 rgb(255, 255, 255)' : '' })}>Inicio</NavLink></li>
+                    <li><NavLink to="nosotros" style={({ isActive }) => ({ boxShadow: isActive ? 'inset 3px 3px 0 0 rgb(255, 255, 255)' : '' })}>Nosotros</NavLink></li>
+                    <li><NavLink to="servicios" style={({ isActive }) => ({ boxShadow: isActive ? 'inset 3px 3px 0 0 rgb(255, 255, 255)' : '' })}>Servicios</NavLink></li>
+                    <li><NavLink to="galeria" style={({ isActive }) => ({ boxShadow: isActive ? 'inset 3px 3px 0 0 rgb(255, 255, 255)' : '' })}>Reparaciones</NavLink></li>
+                    <li><NavLink to="novedades" style={({ isActive }) => ({ boxShadow: isActive ? 'inset 3px 3px 0 0 rgb(255, 255, 255)' : '' })}>Novedades</NavLink></li>
+                    <li><NavLink to="contacto" style={({ isActive }) => ({ boxShadow: isActive ? 'inset 3px 3px 0 0 rgb(255, 255, 255)' : '' })}>Contacto</NavLink></li>
                 </ul>
             </div>
         </nav>
@@ -23,3 +23,4 @@ const Nav = (props) => {
 }
 
 export default Nav;
+

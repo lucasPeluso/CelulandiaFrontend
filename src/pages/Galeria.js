@@ -5,30 +5,44 @@ import '../styles/components/pages/Galeria.css'
 const GaleriaPage = (props) => {
     return (
         <main className="holder">
-            <h2>Galería de celulares reparados</h2>
-            <div className="galeria">
-                <div className="foto">
-                    <img src="img/celular1.jpg" alt=""/>
+            <h1 className="tittle">Galería de celulares reparados</h1>
+
+            <div className="container-galery">
+                <div className="item-galery">
+                    <img src="img/galeria1.png" alt=""/>
                 </div>
-                <div className="foto">
-                    <img src="img/celular2.jpg" alt=""/>
+                <div className="item-galery">
+                    <img src="img/galeria2.jpg" alt=""/>
                 </div>
-                <div className="foto">
-                    <img src="img/celular3.jpg" alt=""/>
+                <div className="item-galery">
+                    <img src="img/galeria3.png" alt=""/>
                 </div>
-                <div className="foto">
-                    <img src="img/celular4.jpg" alt=""/>
+                <div className="item-galery">
+                    <img src="img/galeria4.png" alt=""/>
                 </div>
-                <div className="foto">
-                    <img src="img/celular5.jpg" alt=""/>
+                <div className="item-galery">
+                    <img src="img/galeria5.png" alt=""/>
                 </div>
-                <div className="foto">
-                    <img src="img/celular6.jpg" alt=""/>
+                <div className="item-galery">
+                    <img src="img/galeria6.png" alt=""/>
                 </div>
-                <div className="foto">
-                    <img src="img/celular7.jpg" alt=""/>
+                <div className="item-galery">
+                    <img src="img/galeria7.png" alt=""/>
+                </div>
+                <div className="item-galery">
+                    <img src="img/galeria8.png" alt=""/>
+                </div>
+                <div className="item-galery">
+                    <img src="img/galeria9.jpg" alt=""/>
+                </div>
+                <div className="item-galery">
+                    <img src="img/galeria10.jpg" alt=""/>
                 </div>
             </div>
+
+            <a href="contacto.html" className="btn-wsp">
+                <p>WhatsApp</p>
+            </a>
     </main>
     );
 }
