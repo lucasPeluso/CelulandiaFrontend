@@ -74,15 +74,17 @@
 }
 
 .img-nos{
-    width: 220px;
+    width: 180px;
     height: 300px;
+
+    object-fit: cover;
 
     border-radius: 5px 0 0 5px;
 }
 
 .container-nos div{
     height: 300px;
-    width: 760px;
+    width: 710px;
 
     display: grid;
     grid-template-columns: auto 1fr;

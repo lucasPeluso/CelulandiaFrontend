@@ -1,15 +1,60 @@
-import React from "react";
+import React, {useRef} from "react";
 
 import '../styles/components/pages/Home.css'
 
+
+
+
+
 const HomePage = (props) => {
+    const carousel = useRef(null);
+
+    const siguiente = () => {
+        if(carousel.current.children.length > 0){
+            const primerElemento = carousel.current.children[0];
+            
+            carousel.current.style.transition = '300ms ease-out all';
+
+            carousel.current.style.transform = 'translateX(-800px)';
+
+            const transicion = () =>{
+                carousel.current.style.transition = 'none';
+                carousel.current.style.transform = 'translateX(0px)';
+
+                carousel.current.appendChild(primerElemento);
+
+                carousel.current.removeEventListener('transitionend', transicion)
+
+            }
+
+            carousel.current.addEventListener('transitionend', transicion)
+
+        }
+    }
+    
+    const anterior = () => {
+        if(carousel.current.children.length > 0){
+            const index = carousel.current.children.length -1;
+            const ultimoElemento = carousel.current.children[index];
+            carousel.current.insertBefore(ultimoElemento, carousel.current.firstChild);
+            
+            carousel.current.style.transition = 'none';
+            carousel.current.style.transform = 'translateX(-800px)';
+
+            setTimeout(() => {
+                carousel.current.style.transition = '300ms ease-out all';
+                carousel.current.style.transform = 'translateX(0px)';
+            }, 30);
+        }
+    }
+
     return (
         <main className="holder">
         <div className="container-img">
             
             <h1 className="h1-img">Servicio técnico<br/>
                 de celulares</h1>
-            <a href="contacto.html" class="btn-img">¡Escribinos!</a>
+            <a href="contacto" class="btn-img">¡Escribinos!</a>
             <img className="imghome" src="img/imghome.png" alt=""/>   
 
         </div>
@@ -50,14 +95,14 @@ const HomePage = (props) => {
             <h3>Testimonios</h3>
         </div>
 
-        {/* <div class="testimonios">
+        <div class="testimonios">
             <div class="carousel">
                 <div class="carousel-container">
-                    <button aria-label="Anterior" class="btn-left">
+                    <button onClick={anterior} aria-label="Anterior" class="btn-left">
                         <i class="fas fa-chevron-left"></i>
                     </button>
 
-                    <div class="carousel-lista">
+                    <div class="carousel-lista" ref={carousel}>
                         <div class="elemento">
                             <p>
                                 Excelente atención!! Te hacen el presupuesto sin cargo, 
@@ -90,18 +135,18 @@ const HomePage = (props) => {
                         </div>
                     </div>
 
-                    <button aria-label="Siguiente" class="btn-right">
+                    <button onClick={siguiente} aria-label="Siguiente" class="btn-right">
                         <i class="fas fa-chevron-right"></i>
                     </button>
                 </div>
             </div>
             <img src="img/Vector.png" alt=""/>
-        </div> */}
+        </div>
 
         <h4>¡Presupuesto sin cargo!</h4>
         <img className="vector" src="img/Vector_2_1.png" alt=""/>
 
-        <a href="contacto.html" className="btn-wsp">
+        <a href="contacto" className="btn-wsp">
             <p>WhatsApp</p>
         </a>
 

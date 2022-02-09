@@ -21,8 +21,10 @@
     margin: 20px;
 }
 
-.novedades h2{
+.novedades h2,
+.novedades h6{
     margin-top: 10px;
+    margin-bottom: 20px;
 
     text-align: left;
     font-family: Montserrat;
@@ -30,6 +32,14 @@
     font-weight:600;
     color: #4e4e4e
 }
+
+.novedades h6{
+
+    font-size: 24px;
+    font-weight:400;
+
+}
+
 
 .novedades p{
     text-align: left;

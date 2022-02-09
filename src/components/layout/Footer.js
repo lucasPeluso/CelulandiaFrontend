@@ -8,7 +8,7 @@ const Footer = (props) => {
             <div className="container-footer">
                 <div className="grid-footer">
                     <div>
-                        <p style={{ style: "font-weight: bold" }}>
+                        <p style={{ fontWeight: "bold" }}>
                             Servicios
                         </p>
                         <p>
@@ -20,7 +20,7 @@ const Footer = (props) => {
                         </p>
                     </div>
                     <div>
-                        <p style={{ style: "font-weight: bold" }}>
+                        <p style={{ fontWeight: "bold" }}>
                             Horarios de atención
                         </p>
                         <p>
@@ -29,7 +29,7 @@ const Footer = (props) => {
                         </p>
                     </div>
                     <div>
-                        <p  style={{ style: "font-weight: bold" }}>
+                        <p  style={{ fontWeight: "bold" }}>
                             ¿Dudas? Contactanos
                         </p>
                         <p>
@@ -39,7 +39,7 @@ const Footer = (props) => {
                         </p>
                     </div>
                     <div>
-                        <p  style={{ style: "font-weight: bold" }}>
+                        <p  style={{ fontWeight: "bold" }}>
                             SITIO SEGURO
                         </p>
                         <p>
@@ -48,7 +48,7 @@ const Footer = (props) => {
                     </div>
                 </div>
                 <div className="copy-footer">
-                    Diseñado por Lucas Peluso - 2022
+                    Diseñado por Lucas Peluso &copy; - 2022
                 </div>
             </div>
         </footer>

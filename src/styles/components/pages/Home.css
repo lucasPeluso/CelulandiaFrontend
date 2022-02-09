@@ -2,6 +2,7 @@
     width: 1000px;
     margin: 0 auto;
     text-align: center;
+    overflow: hidden;
 }
 
 
@@ -158,10 +159,10 @@ h3{
 .carousel{
     position: absolute;
 
-    margin-left:175px;
-    margin-top:40px;
+    margin-left:100px;
+    margin-top:25px;
 
-    width:650px;
+    width:800px;
     height:165px;
 
     background-color:rgba(255, 255, 255, 1);
@@ -172,21 +173,31 @@ h3{
 .carousel-container{
     position: relative;
 
+    overflow: hidden;
+
+}
+
+.carousel-lista{
+    display: flex;
+    flex-wrap: nowrap;
+
 }
 
 .elemento{
     display: grid;
     grid-template-rows: 1fr auto auto;
 
+    min-width: 100%;
+
+    transition: .3s ease all;
+
+    z-index: 10;
 
 }
 
 .elemento p{
 
-    padding: 20px;
-
-    margin-top: 0;
-
+    margin: 30px 50px 20px 50px;
     color:#4e4e4e;
     font-family:Montserrat;
     font-weight:600;
@@ -219,25 +230,31 @@ h3{
 
 .elemento .name{
     text-align: center;
-    padding: 0.5em;
+    margin: 10px;
 }
 
 .btn-left,
 .btn-right{
     position: absolute;
     display: block;
-    
+
+    z-index: 100;
+
     font-size: 30px;
 
+    padding: 10px;
+
     border: none;
-    top: calc(28%);
+    top: 0;
+    height: 70%;
     cursor: pointer;
     line-height: 30px;
     text-align: center;
-    background: none;
+    background-color: rgba(0, 0, 0, .07);
     color: #4e4e4e;
     opacity: 35%;
 
+    transition: .3s ease all;
 }
 
 .btn-left:hover,
@@ -248,12 +265,12 @@ h3{
 
 
 .btn-left{
-    left: -50px;
+    left: 0px;
 }
 
 
 .btn-right{
-    right: -50px;
+    right: 0px;
 }
 
 h4{

@@ -42,7 +42,7 @@ const ServiciosPage = (props) => {
                 </div>
             </div>
 
-            <a href="contacto.html" className="btn-wsp">
+            <a href="contacto" className="btn-wsp">
                 <p>WhatsApp</p>
             </a>
 

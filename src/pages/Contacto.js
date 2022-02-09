@@ -34,15 +34,15 @@ const ContactoPage = (props) => {
                 <div>
                     <h6>Otras formas de charlar con nosotros:</h6>
                     
-                    <a href="contacto.html" className="btn-inst">
+                    <a href="contacto" className="btn-inst">
                         <i className="fab fa-instagram"></i>
                     </a>
                     
-                    <a href="contacto.html" className="btn-msg">
+                    <a href="contacto" className="btn-msg">
                         <i className="fab fa-facebook-messenger"></i>
                     </a>
                     
-                    <a href="contacto.html" className="btn-wsp2">
+                    <a href="contacto" className="btn-wsp2">
                         <i className="fab fa-whatsapp"></i>
                     </a>
                 </div>
