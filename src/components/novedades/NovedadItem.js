@@ -5,7 +5,7 @@ const NovedadItem = (props) => {
 
         <div>
             <div className="novedades">
-            <img src={imagen} />
+            <img src={imagen ? imagen : "img/imgnodisponible.jpg"}  />
                 <div>
                     <h2>{title}</h2>
                     <h6>{subtitle}</h6>
